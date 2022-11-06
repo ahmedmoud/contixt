@@ -1,0 +1,38 @@
+.mediaParent img {
+    max-width: 168px; margin: 10px 0; max-height: 168px;
+    border: 2px solid red;
+}
+.mediaParent .featuredImagePlace {
+    position: relative; margin-top: 16px; max-width: 168px; float: right; margin-left: 25px;
+}
+.mediaParent .featuredimgClose {top:0; cursor: pointer;
+    display:block; position: absolute; background: red; width: 30px; height: 30px; text-align: center; color: #fff; font-size: 20px; font-weight: bold; border-radius: 50%; right: -11px;
+}
+
+.highlight-img{
+    border: 6px solid #1e8bff;
+}
+.IMGparent img{
+    max-width: 100%;
+    height: 99px;
+    float: right;
+}
+
+.modal-body{
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.modal-body .tab-content{
+    flex: 1;
+}
+
+.white-box{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.IMGparent {
+    width: 33%;
+    float: right;
+}

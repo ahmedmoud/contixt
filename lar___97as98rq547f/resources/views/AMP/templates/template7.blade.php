@@ -1,0 +1,5 @@
+<div class="col-md-{{ $widget->content->width }} nopadding">  <div class="life-box clearfix  {{ '___'.$widget->id }}"> <div class="title-header"> @if( isset($the_cat) && $the_cat ) <h4><a class="nostylea" href="{{ url($the_cat->slug) }}">{{ $the_cat->name }}</a></h4> @else <h4>{{ $widget->title }} <h4> @endif </div>  @foreach($posts as $post) <div class="life-item">  <a href="{{ url($post->slug) }}"> <div class="c-slide"> <div class="c-overlay"></div> 
+    @php
+    list($width,$height) = getimagesize( Media::ClearifyAttach($post->Murl,'medium') );
+@endphp
+<amp-img width="{{ $width }}" height="{{ $height }}" src="{{ asset(Media::ClearifyAttach($post->Murl, 'medium')) }}" layout="responsive" alt="{{ $post->title }}" ></amp-img> <a href="{{ url($post->cslug) }}" class="btn ctcbtn {{ '__'.$widget->id }}" >{{ $post->cname }}</a> <div class="c-caption VRideo"><h3>{{ $post->title }}</h3> </div> </div> </a> </div> @endforeach</div>  </div> 

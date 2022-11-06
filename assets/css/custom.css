@@ -1,0 +1,20 @@
+.rateSec {
+	margin: 20px;
+}
+
+.like_btn {
+	color: #3513f4;
+	cursor: pointer;
+}
+
+.def_btn
+{
+	color:#57565b;
+	cursor: pointer;
+}
+
+#favBtn
+{
+	margin-right: 20px;
+}
+

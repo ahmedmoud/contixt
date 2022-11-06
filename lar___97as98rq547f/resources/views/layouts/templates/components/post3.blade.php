@@ -1,0 +1,1 @@
+<div class="first-view-box"> <a href="{{ url('/'.$post->slug) }}"> <div class="box"><div class="box-img-cont"> <img src="{{ @url(@Media::ClearifyAttach($post->Murl, 'small') ?? '') }}" class="img-responsive"  alt="{{ $post->title }}"> </div> <p class="h4">{{ @$post->title }}</p> </div> </a> </div>
